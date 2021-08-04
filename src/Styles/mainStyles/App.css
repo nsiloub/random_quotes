@@ -1,0 +1,110 @@
+:root {
+  --h3: calc((1.8rem) + 1.3vw);
+  --h4: calc((1rem) + 1.3vw);
+}
+
+.quote-boxe {
+  /*height: 100%;
+    width: auto;*/
+  width: auto;
+  height: 100%;
+  background: red;
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(auto, auto));
+    gap: 0.5%;
+    align-items: center;
+    justify-items: center;
+    */
+}
+
+.content .quote {
+  width: 94%;
+  height: auto;
+  background: whitesmoke;
+  font-size: var(--h3);
+  padding: 2% 0.5% 1%;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.content .author {
+  padding: 0.5% 1% 1%;
+  width: auto;
+  height: auto;
+  background: whitesmoke;
+  font-size: var(--h4);
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+.controls {
+  position: fixed;
+  /*width: auto;
+    height: auto;*/
+  z-index: 10;
+  top: 2%;
+  left: 2%;
+  right: 2%;
+  z-index: 10;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(40vw, auto))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40vw, auto));
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 2%;
+  /*a*/
+}
+
+.controls .tweet {
+  display: inline;
+  font-size: var(--h4);
+  background: whitesmoke;
+}
+
+.controls .new-quote {
+  display: inline;
+  font-size: var(--h4);
+}
+
+body {
+  height: 100vh;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+body .root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  background: blue;
+}
+/*# sourceMappingURL=App.css.map */
